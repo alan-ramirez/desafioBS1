@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Link de CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--Titulo de nuestro html-->
+    <title>Contacto - Music Gear Store</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div>
+                <img src="../img/logo.png" alt="logo" class="logo">
+                <h1 class="titulo">MUSIC GEAR STORE</h1>
+            </div>
+            <!--Menu-->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Clases
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="../pages/clases.html">Guitarra</a></li>
+                          <li><a class="dropdown-item" href="../pages/clases.html">Teclado action</a></li>
+                          <li><a class="dropdown-item" href="../pages/clases.html">Batería</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <!--
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="productos.html">Productos</a>
+                    </li>  
+                    <li>
+                        <a href="clases.html">Clases</a>
+                        <ul class="subMenu">
+                                <li><a href="">Guitarra</a></li>
+                                <li><a href="">Teclado</a></li>
+                                <li><a href="">Batería</a></li>
+                        </ul>  
+                    </li>
+                </ul>    
+            </nav>
+            -->
+        </header>
+
+        <main class="textoClases">
+            <!--Texto a completar-->
+            <p class="p2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur iure, hic, voluptate nam neque blanditiis repellendus veniam fuga quaerat, dolores omnis enim est dolore ipsam delectus doloribus commodi accusamus
+            </p>
+    
+            <!--Formulario de contacto-->
+          <form>
+            <fieldset>
+                <legend class="tituloForm"> Formulario </legend>
+                <div class="box2">
+                    <label for="nombre"> Completa tu nombre </label>
+                    <input type="text" name="nombre" placeholder="Completa tu nombre y apellido" size="30px" class="cuadro">
+    
+                </div>
+                
+                <div class="box2">
+                    <label for="email"> Completa tu email</label>
+                    <input type="email" required placeholder="Completa tu email" class="cuadro" >
+                </div>
+                
+                <div class="box2">
+                    <label for="pais"> Selecciona tu país</label>
+                    <select name="pais" class="cuadro">
+                        <option value="">Elegi tu país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                    </select>
+    
+                </div>
+                
+                <div class="box3">
+                    <label for="sexo">Género</label>    
+                    <input type="radio" name="sexo" value="hombre"> hombre <br>
+                    <input type="radio" name="sexo" value="mujer"> mujer <br>
+                    <input type="radio" name="sexo" value="no binario"> no binario <br>
+                </div>
+                
+                <div class="botonForm">
+                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" type="reset" value="Resetear">
+                </div>  
+            </fieldset>
+          </form>
+      
+        </main>
+        <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet hic dolore, accusamus provident aspernatur deserunt magni unde, reprehenderit quasi ipsa! Quae dolores dolor, aliquid unde fugiat mollitia</p>
+            <h4>Todos los derechos reservados</h4>
+        </footer>
+    </div>
+    
+    <!--link js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
