@@ -10,47 +10,45 @@ body{
 /* grid layout*/
 .contenedor {
     display: grid;
-    grid-template-areas:    "header header"
+    grid-template-areas:    
+                            "header header"
                             "nav nav"
                             "main main"
                             "footer footer";
-    justify-content: center;
+    justify-content: flex-start;
 }
 section {
     grid-area: main;
     padding: 0;
 }
 
+/* inicio estilos del menu */
 header{
     grid-area: header;
 }
-header h1 {
-    text-align: center;
-    margin-bottom: 20px;
-/* animacion */
-    animation-name: titulo;
-    animation-iteration-count: inherit;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-}
-@keyframes titulo {
-    10% {
-        transform:scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
 
+
+.d-flex {
+    height: 70px;
+    max-width: 1400px;
 }
 
 .logo {
-    width: 10%;
-/* animacion */
+    /* animacion */
     animation-name: logo;
     animation-iteration-count: infinite;
     animation-duration: 6s;
     animation-timing-function: linear;
 
+}
+
+.form-control {
+    width: 40%;
+}
+.telefono {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 @keyframes logo {
     10% {
@@ -71,7 +69,7 @@ header h1 {
 nav{
     grid-area: nav;
 }
-/* inicio estilos del menu */
+
 nav ul {
     display: flex;
     list-style: none;
@@ -84,38 +82,52 @@ nav ul {
 
 /*animacio  n li*/
 li:hover {
-    background-color: rgb(174, 173, 247);
+    background-color: rgb(175, 174, 245);
+    transform: scale(1.1);
+}
+nav ul li:hover{
+    background-color: rgb(175, 174, 245);
     transform: scale(1.1);
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-    background-color: white;
-    border-radius: 50px;
-    padding: 5px;
-}
-/* fin de estilos del menu */
 
+/* fin de estilos del menu */
+/* Estilos carousel */
 main {
     grid-area: main;
 }
 
-/* estilos main */
-.mainHome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 30px;
 
-}
-.img1 {
-    width: 90%;
-    margin-top: 30px;
+.carousel-inner img {
+    object-fit: cover;
+    height: 70vh;
 }
 
+.carousel-item img {
+    object-fit: cover;
+    height: 70vh;
+}
+
+
+/* fin de estilos carousel */
+
+/*Estilos cards*/
+
+.card-group{
+    padding-top: 40px;
+}
+.card {
+    background-color: rgb(227, 227, 252);
+}
+
+.card-img-top {
+    width: 80px;
+    margin-left: 20px;
+}
+
+/* fin de estilos cards */
+
+/* estilos footer*/
 footer {
     grid-area: footer;
 }
@@ -127,12 +139,17 @@ footer p {
 }
 footer h4 {
     margin-bottom: 20px;
+    font-size: 13px;
 }
 
-.menu li:hover .subMenu {
-    display: block;
-}
+/*fin estilos footer*/
 
+/* estilos clases*/
+
+.imgClases {
+    object-fit: cover;
+    height: 70vh;
+}
 /*Estilos nosotros */
 
 .img2 {
@@ -159,16 +176,7 @@ footer h4 {
     text-align:center;
     font-size: 28px;
 }
-/* estilos clases */
-.textoClases {
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 30px;
-}
 
-.img3 {
-    padding-top: 30px;
-}
 
 /* estilos contacto */
 .tituloForm {
@@ -213,27 +221,37 @@ label {
 section h5 {
     font-size: 40px;
     text-align: center;
-    background-color: black;
+    background-color: black ;
 }
 section p3 {
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 25px;
     color: black;
+    width: 50px;
     background-color: white;
 }
-.carousel {
-    padding-top: 70px;
-}
+
 @media only screen and (max-width:600px) and (min-width: 320px) {
     /* Inicio */
     .logo {
-        margin-left: 20px;
-        width: 120px;
+        width: 100px;
     }
 
-    h1 {
-        margin-top: 5px;
-        font-size: 28px ;
+    .btn-secondary {
+        display: none;
+    }
+    .form-control {
+        display: none;
+    }
+    .telefono {
+        width: 100px;
+        font-size: 9px;
+    }
+    .btn-outline-success {
+        display: none;
+    }
+    .d-flex {
+        max-width: 100px;
     }
     .menu {
         margin-bottom: 40px;
@@ -247,6 +265,7 @@ section p3 {
     footer p {
         font-size: 8px;
         margin: 0px 20px;
+        width: 230px;
     }
 
     h4 {
@@ -359,240 +378,53 @@ section p3 {
     }
 }
 
-@media only screen and (max-width:1024px) and (min-width: 600px) {
-    .logo {
-        margin-left: 20px;
-        margin-bottom: 30px;
-        width: 180px;
-    }
-    div{
-        margin: 50px;
-    }
-    h1 {
-        margin-top: 5px;
-        font-size: 50px ;
-    }
-    .menu {
-        margin-bottom: 50px;
-    }
-    nav ul li a {
-        font-size: 30px;
-        margin: 20px;
-    }
-    .img1 {
-        width: 97%;
-        margin-top: 40px;
-    }
-    footer p {
-        font-size: 20px;
-        margin: 0px 20px;
-    }
-    h4 {
-        font-size: 18px;
-        margin: 20px;
-    }
-    section {
-        padding: 0px;
-        margin: 0px;
-    }
-    .carousel-caption {
-        padding: 0px;
-        margin: 0px;
-    }
-    .carousel{
-        padding: 0px;
-        margin: 0px;
-    }
-    .slide {
-        padding: 0px;
-        margin: 0px;
-    }
-    .carousel-inner{
-        padding: 0px;
-        margin: 0px;
-    }
-    section h5{
-        margin: 0px;
-        padding: 0px;
-        width: 300px;
-    }
-      /*Submenú*/
-      .subMenu li a {
-        display: block;
-        padding: 5px  ;
-        color: black;
-        font-size: 16px;
-        text-decoration: none;
-    }
-    /* productos */
-    .mainProductos {
-        display: flex;
-        flex-direction: column;
-    }
-    .box img {
+@media only screen and (max-width:900px) and (min-width: 601px) {
+    .header {
         width: 100%;
-        height: 390px;
-        margin: 2px;
-        padding-top: 10px;
     }
-    /* clases */
-    .textoClases {
-        font-size: 24px;
-        text-align: center;
-        padding-bottom: 12px;
-        margin: 2px;
+    .logo {
+        width: 120px;
+        height: 70px;
+    }
+
+    .telefono {
+        width: 600px;
+        font-size: 19px;
     }
     
-    .img3 {
-        padding-top: 30px;
-        padding-left: 25px;
-        width: 90%;
+    .d-flex {
+        max-width: 130px;
     }
-    /* contacto */
-    .tituloForm {
-        font-size: 45px;
-        padding-top: 30px;
-        padding-bottom: 20px;
+    .form-control {
+        display: none;
     }
-    .box2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
-        margin: 20px;
-    }
-    label {
-        margin: 20px;
-        font-size: 40px;
-    }
-    .cuadro {
-        font-size: 30px;
-    }
-    .box3 {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding-left: 10px  ;
-        padding-top: 20px;
-        padding-bottom: 20px;
+    .btn-outline-success {
+        display: none;
     }
 
-    .boton {
-        font-size: 20px;
-        width: 100px;
-        height: 40px;
-        background-color: white;
-        font-weight: bold;
-        display: inline;
-    }
-
-    .p2 {
-        text-align: center;
-        font-size: 35px;
-        margin-bottom: 20px;
-        padding-top: 90px;
-    }
-
-    section h5 {
-        font-size: 30px;
-        text-align:justify;
-        background-color: black;
-    }
-    section p3 {
-        font-size: 20px;
-        color: black;
-        background-color: white;
+    footer p {
+        font-size: 15px;
+        margin: 20px 20px;
     }
 }
+@media only screen and (min-width: 900px) {
+    /* Estilos inicio*/
+    .container-fluid {
+        font-size: 22px;
+    }
 
-@media only screen and (min-width: 1024px) {
-    .logo {
-        margin-left: 20px;
-        margin-bottom: 30px;
-        width: 250px;
+    /* Estilos clases*/
+    .car2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    div{
-        margin: 50px;
-    }
-    h1 {
-        margin-top: 5px;
-        font-size: 70px ;
-    }
-    .menu {
-        margin-bottom: 90px;
-    }
-    nav ul li a {
-        font-size: 30px;
-        margin: 20px;
-    }
-    .img1 {
-        width: 97%;
-        margin-top: 40px;
-    }
-    footer p {
-        font-size: 20px;
-        margin: 0px 20px;
-    }
-    h4 {
-        font-size: 23px;
-        margin: 22px;
-    }
-    section h5 {
-        font-size: 40px;
-        width: 420px;
-        text-align:justify;
+    .cont h5 {
+        font-size: 50px;
+        color: white;
         background-color: black;
     }
-    section p3 {
-        font-size: 25px;
-        color: black;
-        background-color: white;
-    }
-    .navbar {
-        width: 1000px;
-    }
-    .navbar-expand-lg {
-        width: 1024px;
-    }
-    .container-fluid {
-        width: 900px;
-    }
-      /*Submenú*/
-      .subMenu li a {
-        display: block;
-        padding: 5px  ;
-        color: black;
-        font-size: 30px;
-        text-decoration: none;
-    }
-    /* productos */
-    .mainProductos {
-        display: flex;
-        flex-direction: column;
-    }
-    .box img {
-        width: 100%;
-        height: 450px;
-        margin: 2px;
-        padding-top: 10px;
-    }
-    .texto2 {
-        font-size: 40px;
-    }   
-    /* clases */
-    .textoClases {
-        font-size: 25px;
-        text-align: center;
-        padding-bottom: 12px;
-    }
-    
-    .img3 {
-        padding-top: 30px;
-        padding-left: 25px;
-        width: 90%;
-    }
-     /* clases */
-    .box2 {
-        font-size: 20px;
+    .carousel-caption h5 {
+        font-size: 35px;
     }
 }

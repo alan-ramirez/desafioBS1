@@ -15,121 +15,96 @@
     <title>Clases - Music Gear Store</title>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <div>
-                <img src="../img/logo.png" alt="logo" class="logo">
-                <h1 class="titulo">MUSIC GEAR STORE</h1>
-            </div>
-
-            <!--Menu-->
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/productos.html">Productos</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Clases
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <li><a class="dropdown-item" href="../pages/clases.html">Guitarra</a></li>
-                          <li><a class="dropdown-item" href="../pages/clases.html">Teclado action</a></li>
-                          <li><a class="dropdown-item" href="../pages/clases.html">Batería</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                      </li>
-                    </ul>
-                  </div>
+  <div class="contenedor">
+    <header>
+        <div>
+              <form class="d-flex">
+                <img src="../img/logo.png" alt="logo" class="logo col-1">
+                <input class="form-control" type="search" placeholder="Ingrese producto, # de catálogo o marca" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                <h4 class="telefono">0800-xxx-xxx <span class="badge bg-secondary">8-20 HS, LUNES - SABADO</span></h4>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary">Tiendas</button>
+                  <button type="button" class="btn btn-secondary">Cuenta</button>
+                  <button type="button" class="btn btn-primary">Carrito</button>
                 </div>
-            </nav>
-            <!--
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <a href="../index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="productos.html">Productos</a>
-                    </li>  
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>    
-            </nav>
-            -->
+              </form>
+        </div>
+    </header>
+    <!--Menu-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Clases
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../pages/clases.html">Guitarra</a></li>
+                    <li><a class="dropdown-item" href="../pages/clases.html">Teclado</a></li>
+                    <li><a class="dropdown-item" href="../pages/clases.html">Batería</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         </header>
 
         <!-- Carrousel -->
-        <section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <main class="cont">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/homenew2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>GUITARRA</h5>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/claseguitarra.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/claseteclado.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/clasebateria.jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-               
               </div>
-        </section>
-
-        <main class="mainClases">
-            
-            <!--Texto a completar-->
-            <p class="textoClases"> 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur iure, hic, voluptate nam neque blanditiis repellendus veniam fuga quaerat, dolores omnis enim est dolore ipsam delectus doloribus commodi accusamus
-            </p>
-        <!--Imágenes
-            <img class="img3" src="../img/claseguitarra.jpg " alt="guitarras varias">
-
-            <img class="img3" src="../img/claseteclado.jpg" alt="clases de guitarra">
-        
-            <img class="img3" src="../img/clasebateria.jpg" alt="outlet">
-        -->
+              <div class="carousel-item">
+                <img src="/img/pianoles.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TECLADO</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/drumles.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>BATERIA</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
-        <footer>
+    <footer>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eveniet hic dolore, accusamus provident aspernatur deserunt magni unde, reprehenderit quasi ipsa! Quae dolores dolor, aliquid unde fugiat mollitia</p>
             <h4>Todos los derechos reservados</h4>
-        </footer>
-    </div>
+    </footer>
+  </div>
 
-    <!--link js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!--link js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
